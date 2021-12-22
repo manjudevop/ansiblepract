@@ -14,7 +14,7 @@
     apt:
       name: wget
       state: present
-  - name: i want to install java
+  - name: i want to install apache2
     apt:
-      name: java
+      name: apache2
       state: present    
