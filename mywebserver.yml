@@ -10,7 +10,7 @@
       state: present
     when: ansible_os_family == "Debian"
   - name: i want to install websever on RedHat ansible node
-    apt: 
+    yum: 
       name: httpd
       state: present
     when: ansible_os_family == "RedHat"
