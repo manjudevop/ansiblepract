@@ -6,24 +6,24 @@
   tasks:
   - name: i want to install websever on ubuntu 16 ansible node
     apt: 
-      name: apache2
+      name: mywebpackonubuntu
       state: present
     when: ansible_os_family == "Debian"
 
   - name: i want to start websever on ubuntu 16 ansible node
     service: 
-      name: apache2
+      name: mywebpackonubuntu
       state: started
     when: ansible_os_family == "Debian"
 
   - name: i want to install websever on RedHat ansible node
     yum: 
-      name: httpd
+      name: mywebpackonRedhat
       state: present
     when: ansible_os_family =="RedHat"
 
   - name: i want to service websever on RedHat ansible node
     service:
-      name: httpd
+      name: mywebpackonRedhat
       state: started
     when: ansible_os_family =="RedHat"
