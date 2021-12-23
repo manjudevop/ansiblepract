@@ -16,3 +16,8 @@
 
 [myRedHatervers]
 172.31.16.217
+
+
+[mywebservers:vars]
+mywebpackonubuntu= apache2
+mywebpackonRedhat= httpd
