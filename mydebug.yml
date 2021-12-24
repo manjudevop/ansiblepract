@@ -4,5 +4,10 @@
   tasks:
   - name: i want to excute linux command directly
     command: hostname -f
-    
+    register: myresult
+
+  - name: i want to display result
+    debug: 
+      msg: "{{myresult}}"
+  
 
