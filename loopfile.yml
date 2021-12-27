@@ -1,7 +1,7 @@
 ---
-hosts: 172.31.28.172
-become: yes
-tasks:
+- hosts: 172.31.28.172
+  become: yes
+  tasks:
 - name: i want to install git,tree,wget
   apt: 
     name: "{{item}}"
