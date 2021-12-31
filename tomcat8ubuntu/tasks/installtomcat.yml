@@ -5,7 +5,7 @@
     dest: https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.5/bin/apache-tomcat-8.5.5.tar.gz
     force_basic_auth: yes
 
-- name: create the directory/opt/tomcat to install tomcat
+- name: create the directory,for install tomcat
   file:
     path: /opt/tomcat
     state: directory
