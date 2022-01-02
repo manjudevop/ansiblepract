@@ -1,4 +1,15 @@
 ---
 - name: copy tomcat user file into node side
-  scr: tempales/tomcatuser.j2
-  dest: /opt/tomcat/conf/tomcat-users.xml
+  template:
+    scr: tempales/tomcatuser.j2
+    dest: /opt/tomcat/conf/tomcat-users.xml
+
+- name: copy tomcat context file into node side
+  template:
+    scr: tempales/mycontext.j2
+    dest: /opt/tomcat/webapps/manager/META-INF/context.xml
+
+- name: copy tomcat host context file into node side
+  template:
+    scr: tempales/myhostcontext.j2
+    dest: /opt/tomcat/webapps/host-manager/META-INF/context.xml
