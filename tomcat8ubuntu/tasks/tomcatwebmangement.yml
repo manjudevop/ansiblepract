@@ -1,0 +1,4 @@
+---
+- name: copy tomcat user file into node side
+  scr: tempales/tomcatuser.j2
+  dest: /opt/tomcat/conf/tomcat-users.xml
